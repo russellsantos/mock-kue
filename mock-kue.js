@@ -13,6 +13,7 @@ kue.Job.prototype.save = function(fn){
 	if(fn){
 		fn();
 	}
+  return this;
 }
 
 kue.prototype.process = function(type, n, fn){
